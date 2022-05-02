@@ -1,7 +1,6 @@
 /** @format */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 const featuredImages = [
 	'http://nebula.wsimg.com/59fcbd0994e1177d6f2625e07b87019b?AccessKeyId=739B0F1844975B73CBDD&disposition=0&alloworigin=1',
