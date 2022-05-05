@@ -14,20 +14,20 @@ export default function Dashboard() {
 
 		try {
 			await logout();
-			navigate('/login');
+			navigate('/');
 		} catch {
 			setError('Failed to log out');
 		}
 	}
 	return (
-		<div class='items-center justify-center min-h-screen w-full'>
+		<div class='bg-sky-50 shadow-lg rounded px-8 pt-6 pb-8 mb-4 flex flex-col md:w-1/2 mx-auto mt-20 text-cyan-900'>
 			<div>
 				<div>
-					<h2 className='text-center mb-4'>Profile</h2>
+					<h2 className='text-2xl'>Profile</h2>
 					<span
-						class='p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800'
+						class='mb-4 text-lg rounded text-red-700 dark:bg-red-200 dark:text-red-800'
 						role='alert'>
-						{error && <span class='font-medium'> {error}</span>}
+						{error && <span class='font-medium px-4'> {error}</span>}
 					</span>
 					<strong>Email:</strong> {currentUser.email}
 					<Link to='/update-profile' className='btn btn-primary w-100 mt-3'>
@@ -36,7 +36,10 @@ export default function Dashboard() {
 				</div>
 			</div>
 			<div className='w-100 text-center mt-2'>
-				<button variant='link' onClick={handleLogout}>
+				<button
+					variant='link'
+					onClick={handleLogout}
+					class='w-100 mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'>
 					Log Out
 				</button>
 			</div>
