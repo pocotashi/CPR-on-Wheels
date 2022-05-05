@@ -2,12 +2,13 @@
 
 export default function About() {
 	return (
-		<div class=' text-left md:text-center leading-10'>
-			<div class='p-24 md:p-32 leading-normal'>
+		<div class=' text-left md:text-center md:leading-10'>
+			<div class='p-16 md:p-32 leading-normal'>
 				<h1 class='text-3xl text-bold '>
 					CPR on Wheels, LLC is a Licensed Training Provider of the American Red
 					Cross. We offer First Aid CPR AED and BLS Certification Training in
-					the New York Metro Area.
+					the New York <br />
+					Metro Area.
 				</h1>
 
 				<p class='leading-normal pt-10'>
@@ -22,7 +23,7 @@ export default function About() {
 
 			<div class='bg-emerald-100'>
 				<h1 class='text-3xl pt-20 text-center'>Our Mission</h1>
-				<p class='p-20 text-left'>
+				<p class='p-16 md:p-20 text-left text-clip overflow-hidden'>
 					Our mission is to provide the highest quality training and services
 					possible. We are extremely flexible in accommodating our clients’
 					needs and requests. Above all else we understand that there is a
@@ -39,8 +40,8 @@ export default function About() {
 				</p>
 			</div>
 
-			<div class='md:flex p-20'>
-				<div class='text-left pr-10'>
+			<div class='lg:flex '>
+				<div class='text-left pr-10 p-16 md:p-20'>
 					<h2 class='text-2xl'>Tashi Tiger Shark</h2>
 					<p>Founder of CPR on Wheels, LLC</p>
 
@@ -56,7 +57,7 @@ export default function About() {
 				</div>
 
 				<img
-					class='rounded-full md:w-1/2 md:h-1/2 md:pt-0 pt-20'
+					class='rounded-full lg:w-1/2 lg:h-1/2 md:pt-0 pt-4 p-16 md:p-20'
 					alt=''
 					src='https://dinoanimals.com/wp-content/uploads/2016/11/Tiger-shark.jpg'
 				/>

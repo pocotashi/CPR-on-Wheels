@@ -21,7 +21,7 @@ export default function Navbar() {
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								id='menu-button'
-								className='h-6 w-6 cursor-pointer md:hidden block'
+								className='h-6 w-6 cursor-pointer lg:hidden block'
 								fill='none'
 								viewBox='0 0 24 24'
 								stroke='currentColor'>

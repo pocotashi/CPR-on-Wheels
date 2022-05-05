@@ -32,39 +32,64 @@ export default function Signup() {
 
 	return (
 		<div>
-			<div class='rounded overflow-hidden shadow-lg'>
-				<h2 class='text-center mb-4'>Sign Up</h2>
-				<span
-					class='p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800'
-					role='alert'>
-					{error && <span class='font-medium'> {error}</span>}
-				</span>
-				<form onSubmit={handleSubmit}>
-					<div id='email'>
-						<label>Email</label>
-						<input type='email' ref={emailRef} required />
-					</div>
+			<img src='../images/luffy1.jpeg' alt='' class='mx-auto p-10' />
 
-					<div id='password'>
-						<label>Password</label>
-						<input type='password' ref={passwordlRef} required />
-					</div>
+			<div class='bg-sky-50 shadow-lg rounded px-8 pt-6 pb-8 mb-4 flex flex-col md:w-1/2 mx-auto mt-20 text-cyan-900'>
+				<div>
+					<h2 class='text-2xl'>Sign Up</h2>
+					<span
+						class='mb-4 text-lg rounded text-red-700 dark:bg-red-200 dark:text-red-800'
+						role='alert'>
+						{error && <span class='font-medium px-4 '> {error}</span>}
+					</span>
+					<form onSubmit={handleSubmit}>
+						<div id='email' class='mb-4'>
+							<label class='block text-grey-darker text-sm font-bold mb-2 text-left '>
+								Email
+							</label>
+							<input
+								class='shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker'
+								type='email'
+								ref={emailRef}
+								required
+							/>
+						</div>
 
-					<div id='password-confirm'>
-						<label>Confirm Password</label>
-						<input type='password' ref={passwordConfirmRef} required />
-					</div>
+						<div id='password' class='mb-6'>
+							<label class='block text-grey-darker text-sm font-bold mb-2 text-left '>
+								Password
+							</label>
+							<input
+								class='shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker'
+								type='password'
+								ref={passwordlRef}
+								required
+							/>
+						</div>
 
-					<button
-						disabled={loading}
-						class='w-100 mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
-						type='submit'>
-						Sign Up
-					</button>
-				</form>
-			</div>
-			<div className='w-full text-center mt-2'>
-				Already have an account? <Link to='/login'>Log In</Link>
+						<div id='password-confirm' class='mb-4'>
+							<label class='block text-grey-darker text-sm font-bold mb-2 text-left '>
+								Confirm Password
+							</label>
+							<input
+								class='shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker'
+								type='password'
+								ref={passwordConfirmRef}
+								required
+							/>
+						</div>
+
+						<button
+							disabled={loading}
+							class='w-100 mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+							type='submit'>
+							Sign Up
+						</button>
+					</form>
+				</div>
+				<div className='w-full text-center mt-2'>
+					Already have an account? <Link to='/login'>Log In</Link>
+				</div>
 			</div>
 		</div>
 	);

@@ -27,36 +27,46 @@ export default function ForgotPassword() {
 	}
 
 	return (
-		<div>
+		<div class='bg-sky-50 shadow-lg rounded px-8 pt-6 pb-8 mb-4 flex flex-col md:w-1/2 mx-auto mt-20 text-cyan-900'>
 			<div>
-				<div>
-					<h2 className='text-center mb-4'>Password Reset</h2>
-					<span
-						class='p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800'
-						role='alert'>
-						{error && <span class='font-medium'> {error}</span>}
-					</span>
-					<span
-						class='p-4 mb-4 text-sm text-green-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800'
-						role='alert'>
-						{message && <span class='font-medium'> {message}</span>}
-					</span>
-					<form onSubmit={handleSubmit}>
-						<div id='email'>
-							<label>Email</label>
-							<input type='email' ref={emailRef} required />
-						</div>
-
-						<button disabled={loading} className='w-100 mt-3' type='submit'>
-							Reset Password
-						</button>
-					</form>
-
-					<div className='w-100 text-center mt-2'>
-						<Link to='/login'>Log In</Link>
+				<h2 class='text-2xl'>Password Reset</h2>
+				<span
+					class='mb-4 text-lg rounded text-red-700 dark:bg-red-200 dark:text-red-800'
+					role='alert'>
+					{error && <span class='font-medium px-4'> {error}</span>}
+				</span>
+				<span
+					class='mb-4 text-lg rounded text-emerald-700 dark:bg-emerald-200 dark:text-emerald-800'
+					role='alert'>
+					{message && <span class='font-medium px-4'> {message}</span>}
+				</span>
+				<form onSubmit={handleSubmit}>
+					<div id='email' class='mb-4'>
+						<label class='block text-grey-darker text-sm font-bold mb-2 text-left '>
+							Email
+						</label>
+						<input
+							class='shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker'
+							type='email'
+							ref={emailRef}
+							required
+						/>
 					</div>
+
+					<button
+						disabled={loading}
+						clas='w-100 mt-3'
+						type='submit'
+						class='w-100 mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'>
+						Reset Password
+					</button>
+				</form>
+
+				<div className='w-100 text-center mt-2'>
+					<Link to='/login'>Log In</Link>
 				</div>
 			</div>
+
 			<div className='w-100 text-center mt-2'>
 				Need an account? <Link to='/signup'>Sign Up</Link>
 			</div>
