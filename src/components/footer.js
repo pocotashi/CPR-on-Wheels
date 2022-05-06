@@ -7,15 +7,11 @@ import {
 
 export default function Footer() {
 	return (
-		<footer class='md:flex bg-rose-300  text-left mt-20 text-cyan-900 justify-center items-center'>
+		<footer class='md:flex bg-sky-300  text-left mt-20 text-teal-700 justify-center items-center'>
 			<div class='md:flex-row pl-5 '>
-				<img
-					class='w-1/3 h-1/2 py-5'
-					alt=''
-					src='https://images-platform.99static.com//f2sZeDTWz0zmbhEKgE20Z5iXLk8=/321x792:1166x1637/fit-in/500x500/99designs-contests-attachments/89/89914/attachment_89914782'
-				/>
+				<img class='w-1/2 py-5 ' alt='' src='../images/cpr.png' />
 
-				<h3>About CPR on Wheels</h3>
+				<h3>About Hands on Hearts</h3>
 
 				<p class='py-4'>
 					<a href='/' class='pr-3'>
@@ -34,11 +30,11 @@ export default function Footer() {
 						Contact
 					</a>
 				</p>
-				<p class='text-sm pb-10'>© 2022, CPR on Wheels LLC.</p>
+				<p class='text-sm pb-10'>© 2022, Hands on Hearts LLC.</p>
 			</div>
 
-			<div class='p-2 md:p-5 md:flex'>
-				<p class='text-base '>
+			<div class='p-3 md:p-5 md:flex '>
+				<p class='text-base lg:pr-20 lg:-ml-14'>
 					<span class='text-xl font-bold block pb-5'>About the company</span>
 					We are a licensed Red cross training provider. We offer CPR, AED,
 					First Aid and Lifeguarding Courses.
