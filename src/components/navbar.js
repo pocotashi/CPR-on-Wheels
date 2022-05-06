@@ -6,13 +6,13 @@ export default function Navbar() {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
 		<>
-			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-rose-300 text-cyan-900 '>
+			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-sky-300 text-teal-700 '>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between '>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start '>
 						<a
 							className='text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase '
 							href='/'>
-							cpr on <br /> wheels
+							Hands on <br /> Hearts
 						</a>
 						<button
 							className=' cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'

@@ -5,9 +5,9 @@ export default function About() {
 		<div class=' text-left md:text-center md:leading-10'>
 			<div class='p-16 md:p-32 leading-normal'>
 				<h1 class='text-3xl text-bold '>
-					CPR on Wheels, LLC is a Licensed Training Provider of the American Red
-					Cross. We offer First Aid CPR AED and BLS Certification Training in
-					the New York <br />
+					Hands on Hearts, LLC is a Licensed Training Provider of the American
+					Red Cross. We offer First Aid CPR AED and BLS Certification Training
+					in the New York <br />
 					Metro Area.
 				</h1>
 
@@ -43,10 +43,10 @@ export default function About() {
 			<div class='lg:flex '>
 				<div class='text-left pr-10 p-16 md:p-20'>
 					<h2 class='text-2xl'>Tashi Tiger Shark</h2>
-					<p>Founder of CPR on Wheels, LLC</p>
+					<p>Founder of Hands on Hearts, LLC</p>
 
 					<p>
-						Tashi is the founder of CPR on WHeels, LLC. Tashi has been a
+						Tashi is the founder of Hands on Hearts, LLC. Tashi has been a
 						Lifeguard since 2009 and a Water Safety Instructor since 2011. He
 						also spent 8 summers as a lifeguard at Rockaway beach, Queens NY.
 						His passion for teaching water safety and his background in
@@ -57,7 +57,7 @@ export default function About() {
 				</div>
 
 				<img
-					class='rounded-full lg:w-1/2 lg:h-1/2 md:pt-0 pt-4 p-16 md:p-20'
+					class='rounded-full lg:w-1/2 lg:h-1/2 md:pt-20 pt-4 p-16 md:p-20'
 					alt=''
 					src='https://dinoanimals.com/wp-content/uploads/2016/11/Tiger-shark.jpg'
 				/>

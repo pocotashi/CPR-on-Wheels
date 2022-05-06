@@ -149,7 +149,7 @@ export default function CoursePage() {
 							</div>
 							<div class='bg-cyan-900 md:w-1/2 md:order-first p-10 text-white'>
 								<h3 class='text-xl'>
-									Learning at , <br /> <b>CPR on Wheels</b>
+									Learning at , <br /> <b>Hands on Hearts</b>
 								</h3>
 								<p class='text-sm '>
 									Individually and collectively, we’re impacting millions of

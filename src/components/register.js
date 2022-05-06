@@ -52,6 +52,33 @@ function Register() {
 					<form>
 						<div className='mt-4'>
 							<div>
+								<div class='mt-4'>
+									<label for='cars'>Choose a course:</label>
+									<select
+										name='cars'
+										id='cars'
+										className='w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600'>
+										<option disabled selected value>
+											-- select an option --
+										</option>
+										<option
+											value={courseName}
+											onChange={(e) => setCourseName(e.target.value)}>
+											Adult Child and Pediatric First Aid CPR & AED. - Blended
+											Learning
+										</option>
+										<option
+											value={courseName}
+											onChange={(e) => setCourseName(e.target.value)}>
+											CPR & AED for Professional Rescuers. - Blended Learning
+										</option>
+										<option
+											value={courseName}
+											onChange={(e) => setCourseName(e.target.value)}>
+											Basic Life Support. - Blended Learning
+										</option>
+									</select>
+								</div>
 								<label className='block' for='Name'>
 									Name
 								</label>
@@ -96,34 +123,6 @@ function Register() {
 									value={date}
 									onChange={(e) => setDate(e.target.value)}
 								/>
-							</div>
-
-							<div class='mt-4'>
-								<label for='cars'>Choose a course:</label>
-								<select
-									name='cars'
-									id='cars'
-									className='w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600'>
-									<option disabled selected value>
-										-- select an option --
-									</option>
-									<option
-										value={courseName}
-										onChange={(e) => setCourseName(e.target.value)}>
-										Adult Child and Pediatric First Aid CPR & AED. - Blended
-										Learning
-									</option>
-									<option
-										value={courseName}
-										onChange={(e) => setCourseName(e.target.value)}>
-										CPR & AED for Professional Rescuers. - Blended Learning
-									</option>
-									<option
-										value={courseName}
-										onChange={(e) => setCourseName(e.target.value)}>
-										Basic Life Support. - Blended Learning
-									</option>
-								</select>
 							</div>
 
 							<div className='flex'>
