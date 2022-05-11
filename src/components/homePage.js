@@ -1,7 +1,6 @@
 /** @format */
 
 export default function Home() {
-	console.log('what is worng wit this');
 	return (
 		<div>
 			<div class='relative overflow-hidden rounded-lg shadow-lg cursor-pointer'>
@@ -105,7 +104,10 @@ export default function Home() {
 							/>
 							<div class='px-6 py-4'>
 								<div class='font-bold text-xl mb-2'>BLOG</div>
-								<p class='text-gray-700 text-base'>Checkout our Blog.</p>
+								<p class='text-gray-700 text-base'>
+									Checkout our Blog and read about expriences with cpr and first
+									aid.{' '}
+								</p>
 								<br />
 							</div>
 						</div>

@@ -198,9 +198,9 @@ export default function CoursePage() {
 
 				<div class='relative aspect-video overflow-hidden'>
 					<iframe
-						src='https://www.youtube.com/embed/r9jwGansp1E'
+						src='https://www.youtube.com/embed/stFeJVqOUBU'
 						frameborder='0'
-						allow='autoplay'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						title='vid'
 						allowFullScreen
 						class='absolute top-0 left-0 border-0 self-center overflow-hidden w-full h-full '></iframe>

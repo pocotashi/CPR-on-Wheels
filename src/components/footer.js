@@ -7,7 +7,7 @@ import {
 
 export default function Footer() {
 	return (
-		<footer class='md:flex bg-sky-300  text-left mt-20 text-teal-700 justify-center items-center'>
+		<footer class='md:flex bg-sky-300  text-left mt-20 text-indigo-900 justify-center items-center'>
 			<div class='md:flex-row pl-5 '>
 				<img class='w-1/2 py-5 ' alt='' src='../images/cpr.png' />
 

@@ -17,6 +17,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import Login from './components/users/login';
 import Dashboard from './components/users/dashboard';
 import ForgotPassword from './components/users/forgotpassword';
+import Blog from './components/blog';
 
 function App() {
 	return (
@@ -32,6 +33,7 @@ function App() {
 						<Route path='/resources' element={<Resources />}></Route>
 						<Route path='/contact' element={<Contact />}></Route>
 						<Route path='/courses/search-courses' element={<Courses />}></Route>
+						<Route path='/blog' element={<Blog />}></Route>
 						<Route path='/signup' element={<Signup />}></Route>
 						<Route path='/login' element={<Login />}></Route>
 						<Route path='/dashboard' element={<Dashboard />}></Route>
