@@ -9,9 +9,15 @@ export default function Signup() {
 	const passwordConfirmRef = useRef();
 	const { signup } = useAuth();
 	const [error, setError] = useState('');
+	const [message, setMessage] = useState('');
 	const [loading, setLoading] = useState(false);
+	const formRef = useRef();
 
 	let navigate = useNavigate();
+	function handleClick() {
+		navigate('/courses/search-courses');
+	}
+
 	async function handleSubmit(e) {
 		e.preventDefault();
 
@@ -20,12 +26,14 @@ export default function Signup() {
 		}
 
 		try {
+			setMessage('');
 			setError('');
 			setLoading(true);
 			await signup(emailRef.current.value, passwordlRef.current.value);
-			navigate('/dashboard');
+			formRef.current.reset();
+			setMessage('Successfully signed up');
 		} catch {
-			setError('Failed to creat an account');
+			setError('Failed to create an account');
 		}
 		setLoading(false);
 	}
@@ -38,11 +46,16 @@ export default function Signup() {
 				<div>
 					<h2 class='text-2xl'>Sign Up</h2>
 					<span
+						class='mb-4 text-lg rounded text-emerald-700 dark:bg-emerald-200 dark:text-emerald-800'
+						role='alert'>
+						{message && <span class='font-medium px-4'> {message}</span>}
+					</span>
+					<span
 						class='mb-4 text-lg rounded text-red-700 dark:bg-red-200 dark:text-red-800'
 						role='alert'>
 						{error && <span class='font-medium px-4 '> {error}</span>}
 					</span>
-					<form onSubmit={handleSubmit}>
+					<form onSubmit={handleSubmit} ref={formRef}>
 						<div id='email' class='mb-4'>
 							<label class='block text-grey-darker text-sm font-bold mb-2 text-left '>
 								Email
@@ -90,6 +103,15 @@ export default function Signup() {
 				<div className='w-full text-center mt-2'>
 					Already have an account? <Link to='/login'>Log In</Link>
 				</div>
+			</div>
+
+			<div class='pt-10'>
+				<h1 class='text-indigo-900 text-3xl'>Ready to register for a class?</h1>
+				<button
+					class='w-100 mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+					onClick={handleClick}>
+					Get Started
+				</button>
 			</div>
 		</div>
 	);

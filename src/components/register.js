@@ -1,6 +1,6 @@
 /** @format */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { db } from '../firebase-config';
 import { collection, addDoc, query, onSnapshot } from 'firebase/firestore';
 
@@ -10,6 +10,8 @@ function Register() {
 	const [email, setEmail] = React.useState('');
 	const [date, setDate] = React.useState('');
 	const [courseName, setCourseName] = React.useState('');
+
+	const [message, setMessage] = useState('');
 
 	const [registration, setRegistration] = React.useState([]);
 
@@ -28,6 +30,7 @@ function Register() {
 		setEmail('');
 		setDate('');
 		setCourseName('');
+		setMessage('Successfully Registered');
 	};
 
 	React.useEffect(() => {
@@ -45,10 +48,17 @@ function Register() {
 	return (
 		<div>
 			<div className='flex items-center justify-center min-h-screen'>
-				<div className='px-8 py-5 mx-4 mt-4 text-left md:w-1/3 lg:w-1/3 sm:w-1/3 text-cyan-900'>
+				<div className='px-8 py-5 mx-4 mt-4 text-left md:w-1/3 lg:w-1/3 sm:w-1/3 text-indigo-900'>
 					<h1 class='text-2xl font-bold text-center'>
 						Add Student Information
 					</h1>
+
+					<span
+						class='mb-4 text-lg rounded text-emerald-700 dark:bg-emerald-200 dark:text-emerald-800  '
+						role='alert'>
+						{message && <span class='font-medium px-4 '> {message}</span>}
+					</span>
+
 					<form>
 						<div className='mt-4'>
 							<div>
@@ -88,6 +98,7 @@ function Register() {
 									className='w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600'
 									value={name}
 									onChange={(e) => setName(e.target.value)}
+									required
 								/>
 							</div>
 							<div className='mt-4'>
@@ -95,11 +106,12 @@ function Register() {
 									Email
 								</label>
 								<input
-									type='text'
+									type='email'
 									placeholder='Email'
 									className='w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600'
 									value={email}
 									onChange={(e) => setEmail(e.target.value)}
+									required
 								/>
 							</div>
 
@@ -127,7 +139,8 @@ function Register() {
 
 							<div className='flex'>
 								<button
-									className='w-1/2 px-6 py-2 mt-4 text-white bg-emerald-500 rounded-lg hover:bg-emerald-400'
+									type='submit'
+									className='w-1/2 px-6 py-2 mt-4 text-white bg-emerald-500 rounded-lg hover:bg-emerald-400 mx-auto'
 									onClick={register}>
 									Add Student
 								</button>

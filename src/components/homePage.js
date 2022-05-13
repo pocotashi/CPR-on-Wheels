@@ -3,7 +3,47 @@
 export default function Home() {
 	return (
 		<div>
-			<div class='relative overflow-hidden rounded-lg shadow-lg cursor-pointer'>
+			<div id='banner' class='static overflow-hidden'>
+				<video loop autoPlay={true} class='w-full'>
+					<source
+						src='https://tbcdn.talentbrew.com/company/1732/v4_1/videos/banner-home-lg3.mp4'
+						type='video/mp4'
+					/>
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class=' md:flex md:-mt-36 mt-26 p-10  overflow-hidden justify-center '>
+				<div class='rounded overflow-visible shadow-xl py-10 mb-10 md:mb-0 p-10 bg-slate-50 '>
+					<h1 class='mb-3 text-xl md:text-6xl xl:text-8xl font-semibold tracking-tight text-indigo-900'>
+						Lend a <b>hand</b> <small class='font-thin'>to</small> <br />
+						Save a <b>life</b>, <br /> Be a <b>Hero</b>
+					</h1>
+					<a
+						href='/courses/search-courses'
+						class='relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-rose-400 transition duration-300 ease-out border-2 border-rose-500 rounded-full shadow-md group'>
+						<span class='absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-red-500 group-hover:translate-x-0 ease'>
+							<svg
+								class='w-6 h-6'
+								fill='current'
+								stroke='currentColor'
+								viewBox='0 0 24 24'
+								xmlns='http://www.w3.org/2000/svg'>
+								<path
+									stroke-linecap='round'
+									stroke-linejoin='round'
+									stroke-width='2'
+									d='M14 5l7 7m0 0l-7 7m7-7H3'></path>
+							</svg>
+						</span>
+						<span class='absolute flex items-center justify-center w-full h-full text-red-500 text-xl font-bold transition-all duration-300 transform group-hover:translate-x-full ease'>
+							Get Started
+						</span>
+						<span class='relative invisible'>Get Started</span>
+					</a>
+				</div>
+			</div>
+
+			{/* <div class='relative overflow-hidden rounded-lg shadow-lg cursor-pointer'>
 				<div class='absolute top-1/3 left-1/3 md:top-1/3 md:left-1/3'>
 					{' '}
 					<h1 class='mb-3 text-xl md:text-6xl xl:text-8xl font-semibold tracking-tight text-indigo-900'>
@@ -39,7 +79,7 @@ export default function Home() {
 					class='object-cover w-full h-2/3'
 					alt='slogan'
 				/>
-			</div>
+			</div> */}
 			<section class='md:flex justify-center items-center '>
 				<div class='justify-center sm:justify-left mx-4 py-6'>
 					<img
@@ -54,7 +94,8 @@ export default function Home() {
 						Hands on Hearts
 					</h1>
 					<p class='font-sans font-normal text-xl text-rose-500 leading-relaxed'>
-						Aquatics & Safety Training and Certifications for New York City
+						Aquatics, Safety Training & <br />
+						Certifications for New York City
 					</p>
 				</div>
 			</section>
