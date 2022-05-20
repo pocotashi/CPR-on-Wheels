@@ -84,8 +84,10 @@ export default function Home() {
 				<div class='justify-center sm:justify-left mx-4 py-6'>
 					<img
 						class='mx-auto'
-						src='https://www.humankind.org/wp-content/uploads/2018/08/ems-icon-doing-cpr-e1534816990562.png'
-						alt=''
+						src='../images/cpraction.WebP'
+						alt='cpr being performed, cpr action'
+						width={300}
+						height={300}
 					/>
 				</div>
 
@@ -107,7 +109,9 @@ export default function Home() {
 							<img
 								class='w-full'
 								src='https://media.gcflearnfree.org/content/55e0730c7dd48174331f5164_01_17_2014/whatisacomputer_laptop_computers.jpg'
-								alt='courses'
+								alt='courses for cpr first aid aed, register for cpr classes. learn cpr first aid and aed'
+								width={300}
+								height={300}
 							/>
 							<div class='px-6 py-4'>
 								<div class='font-bold text-xl mb-2'>COURSES</div>
@@ -124,7 +128,9 @@ export default function Home() {
 							<img
 								class='w-full'
 								src='https://www.coopersalehallschool.co.uk/cooper-content/uploads/2021/06/cio-book-list-600x339.png'
-								alt='resources'
+								alt='resources for cpr first aid aed, learn more from red cross cpr first aid'
+								width={300}
+								height={300}
 							/>
 							<div class='px-6 py-4'>
 								<div class='font-bold text-xl mb-2'>RESOURCES</div>
@@ -141,7 +147,9 @@ export default function Home() {
 							<img
 								class='w-full'
 								src='https://media.gcflearnfree.org/content/55e0730c7dd48174331f5164_01_17_2014/whatisacomputer_desktop_computers.jpg'
-								alt='blog'
+								alt='blog written by admins related to safety, cpr first aid aed, red cross classes'
+								width={300}
+								height={300}
 							/>
 							<div class='px-6 py-4'>
 								<div class='font-bold text-xl mb-2'>BLOG</div>

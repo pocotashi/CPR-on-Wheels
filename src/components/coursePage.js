@@ -117,8 +117,8 @@ export default function CoursePage() {
 						<div class='md:h-auto md:flex '>
 							<div class='md:flex-row md:w-1/2'>
 								<img
-									src='../images/DIB-amazing-stories.jpeg'
-									alt='amazing stories start here'
+									src='../images/DIB-amazing-stories.WebP'
+									alt='amazing stories start here, learn cpr'
 								/>
 							</div>
 
@@ -142,9 +142,11 @@ export default function CoursePage() {
 						<div class='md:flex h-auto justify-center text-left lg:text-center content-center'>
 							<div class='md:flex-row md:w-1/2 md:order-last'>
 								<img
-									src='../images/life-at-cap-one.jpeg'
+									src='../images/life-at-cap-one.WebP
+									'
 									class='w-full'
-									alt=''
+									alt='learn cpr
+									'
 								/>
 							</div>
 							<div class='bg-cyan-900 md:w-1/2 md:order-first p-10 text-white'>
@@ -167,7 +169,7 @@ export default function CoursePage() {
 						<div class='md:flex h-auto'>
 							<div class='md:flex-row  md:w-1/2'>
 								<img
-									src='../images/changing-banking.jpeg'
+									src='../images/changing-banking.WebP'
 									alt=''
 									class='w-full'
 								/>

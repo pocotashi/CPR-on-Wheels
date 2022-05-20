@@ -20,11 +20,10 @@ export default function Courses() {
 						</button>
 					</a>
 				</h2>
-
+				git
 				<h6 class='text-red-500 py-8'>
 					Price: $89 | Duration: 1.5 hours | American Red Cross (2 years)
 				</h6>
-
 				<p class='leading-9'>
 					This NYC Adult and Pediatric American Red Cross blended learning First
 					Aid CPR AED training certification course combines a 3.5 hour Online
@@ -93,7 +92,7 @@ export default function Courses() {
 					American Red Cross is an accredited provider of continuing education
 					by the Commission on Accreditation for Prehospital Continuing
 					Education. For additional information on receiving continuing
-					education credit go tohttps://www.redcross.org/CAPCE.{' '}
+					education credit go to https://www.redcross.org/CAPCE.{' '}
 				</p>
 			</div>
 		</div>

@@ -27,7 +27,13 @@ export default function Login() {
 	}
 	return (
 		<div>
-			<img src='../images/luffy.jpeg' alt='' class='mx-auto p-10' />
+			<img
+				src='../images/luffy.WebP'
+				alt='learn cpr firsaid AED'
+				class='mx-auto p-10'
+				width={300}
+				height={300}
+			/>
 			<div class='bg-sky-50 shadow-lg rounded px-8 pt-6 pb-8 mb-4 flex flex-col md:w-1/2 mx-auto mt-20 text-cyan-900'>
 				<div>
 					<h2 class='text-2xl'>Log In</h2>

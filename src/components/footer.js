@@ -5,7 +5,13 @@ export default function Footer() {
 	return (
 		<footer class='md:flex  bg-sky-300  text-left mt-20 text-indigo-900  '>
 			<div class='md:flex-row md:w-1/2 '>
-				<img class='w-1/2 py-5 ' alt='footer-icon' src='../images/cpr.png' />
+				<img
+					class='w-1/2 py-5 '
+					alt='footer-icon cpr hands on hearts first aid aed redcross learn cpr'
+					src='../images/cpr.WebP'
+					width={300}
+					height={300}
+				/>
 
 				<div class='pl-7 xl:pl-16'>
 					<h3>Hands on Hearts</h3>
